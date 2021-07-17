@@ -1,26 +1,26 @@
-# Шаровский Евгений
-Front-End Developer
-### Контакты:
-+ **telegram:** YevheniiSh
-+ **email:** sharovskiyevgeniy@gmail.com
-+ 
- **Резюме:** Скрупулёзный Front-End разработчик нацеленный на профессиональный рост. Люблю узнавать что-то новое и совершенствовать свои навыки разработки. Ежедневно развиваю свои навыки.
+# Sharovskyi Yevhenii
+Front-End Developer
+### Contacts:
++ **telegram:** YevheniiSh
++ **email:** sharovskiyevgeniy@gmail.com
 
-**Навыки:** 
+**Summary:** Scrupulous Front-End developer focused on professional growth. I love to learn something new and improve my development skills. I develop my skills every day.
+
+**Skills:**
 + HTML
-+ CSS 
++ CSS
 + JS
 + Markdown
 + Pascal.
   
 **[Codewars][1]**
 
-**[GitHub][2]** 
+**[GitHub][2]**
 
-**Образование:** младший специалист техник-программист, курсы RS School "JS / FRONT-END".
+**Education:** Junior Specialist, Technician-Programmer, RS School "JS / FRONT-END" courses.
 
-**Уровень английского:** А1.
+**English level:** A1.
 
 
-[1]: https://www.codewars.com/users/sharovskiye "Codewars"
+[1]:https://www.codewars.com/users/sharovskiye "Codewars"
 [2]: https://github.com/sharovskiye "GitHub"
