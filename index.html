@@ -2,42 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <div class="centr">
+    <div class="container">
         <header>
-            <div class="header-left">
-                <h1>Sharovskyi Yevhenii</h1>
-                <p>Front-End Developer</p>
-                <section>
-                    <h2>Contacts:</h2>
-                    <ul>
-                        <li>telegram: YevheniiSh </li>
-                        <li>mail: sharovskiyevgeniy@gmail.com</li>
-                    </ul>
-                </section>
-            </div>
-
-            <img class="photo" src="image/christopher-alvarenga-3G1C_MvxlKs-unsplash.jpg" alt="picture of resume owner">
-
-
+            <h2>CV Front-End Developer</h2>
+            <nav>
+                <ul class="ul-nav">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">6</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
-            <div class="resume-left">
-                <article>
-                    <h2>Summary:</h2>
-                    <p>Scrupulous Front-End developer focused on professional growth. I love to
-                        learn something new and improve my development skills. I develop my skills
-                        every day.</p>
 
-                </article>
+        <main>
+
+
+
+
+            <div class="colum colum-left">
+                <img class="photo" src="image/christopher-alvarenga-3G1C_MvxlKs-unsplash.jpg"
+                alt="picture of resume owner">
+                <div class="header-text">
+                    <h1>Sharovskyi Yevhenii</h1>
+                    <h2>Front-End Developer</h2>
+    
+                </div>
+                    <section>
+                        <h2>Contacts:</h2>
+                        <ul>
+                            <li>telegram: YevheniiSh </li>
+                            <li>mail: sharovskiyevgeniy@gmail.com</li>
+                        </ul>
+                    </section>
 
                 <section>
                     <h2>Skills:</h2>
@@ -55,12 +65,21 @@
                     <p><b></b> A1 (Beginner)</p>
                 </section>
 
+
             </div>
 
-            <div class="resume-right">
+            <div class="colum colum-right">
+                <article>
+                    <h2>Summary:</h2>
+                    <p>Scrupulous Front-End developer focused on professional growth. I love to
+                        learn something new and improve my development skills. I develop my skills
+                        every day.</p>
+
+                </article>
                 <section>
                     <h2>Sample code:</h2>
-                    <a href="https://www.codewars.com/users/sharovskiye">Codewars</a>
+                    
+                    <a href="https://www.codewars.com/users/sharovskiye"><img class="codewars" src="https://www.codewars.com/users/sharovskiye/badges/large" alt="Codewars"></a>
                     <pre><code>function usdcny(usd) {
     let cny = usd * 6.75;
     return cny.toFixed(2)+" Chinese Yuan";
@@ -70,28 +89,35 @@
 
                 <section>
                     <h2>Project:</h2>
-                    <a href="https://github.com/sharovskiye">GitHub</a>
+                    <a href="https://rolling-scopes-school.github.io/sharovskiye-JSFEPRESCHOOL/museum/"> <figure>
+                        <figcaption>Museum</figcaption>
+                        <img src="image/museum.JPG" alt="museum">
+                    </figure></a>
+                   
                 </section>
 
 
                 <section>
                     <h2>Education:</h2>
-                    <p>Junior Specialist, Technician-Programmer, RS School "JS / FRONT-END"
-                        courses. </p>
+                    <ul class="ul-education">
+                        <li>Junior Specialist, Technician-Programmer</li>
+                        <li>RS School "JS / FRONT-END" courses.</li>
+                    </ul>
                 </section>
 
             </div>
+
+
         </main>
-       
-
-
-
         <footer>
             <a href="https://github.com/sharovskiye">GitHub</a>
             <span>2021</span>
-            <a href="https://rs.school/js/"><img class="rs-school" src="https://rs.school/images/rs_school_js.svg"
+            <a href="https://rs.school/js/"><img class="rs-school" src="image/rs_school_js.svg"
                     alt="rs_school"></a>
         </footer>
+    </div>
+
+
     </div>
 </body>
 
