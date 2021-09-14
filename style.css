@@ -1,54 +1,241 @@
-
-
-.photo {
-  height: 75%;
-  border-radius: 50%;
-  border: 4px solid white;
-  float: right;
-  margin: 28px;
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
 }
 
-.centr {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  background-color: #0000000e;
-  border: 4px double black;
-  padding: 10px;
-  height: auto;
+h1{
+    font-size: 2em;
 }
-.rs-school {
-  height: 14px;
+
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
-footer {
-  text-align: center;
-  float: none;
-  
+
+body{
+    margin: 0;
+    color: #ffffff;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+
+    box-shadow: 5px 5px 5px 5px gray;
+    margin: 0 auto;
 }
 
 header{
-    background-color: #C6D9DF;
-    height: 260px;
+    background-color: grey;
+    display: flex;
 }
 
-.header-left{
-    margin-left: 30px;
-    margin-top: 5px;
-    float: left;
+.blue{
+    color: blue;
 }
 
-.resume-left{
- float: left;
- width: 48%;
+.cyan{
+    color: cyan;
 }
 
-.resume-right{
-float: right;
-width: 48%;
+.magenta{
+    color:darkmagenta
 }
+
+.peru{
+    color: peru;
+}
+
+.coral{
+    color: lightcoral;
+}
+
+.green{
+    color: lightgreen;
+}
+
+
+footer{
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav{
+    width: 100%;
+}
+
+.menu-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.ul-nav{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.ul-nav li{
+    padding: 13px;
+}
+
+.menu-icon{
+    right: 0;
+    top:0;
+    display: none;
+}
+
 
 main{
-    height: 440px;
-    margin-left: 15px;
-    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.photo{
+    width: 80%;
+    display: block;
+    border: 0 solid;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.colum-right{
+    width: 65%;
+    color:#000000;
+padding-right: 10px;
+}
+.colum-left{
+    padding-left: 10px;
+    width: 30%;
+    background-color: #174180;
+    padding: 20px;
+}
+
+section{
+    margin-top: 60px;
+}
+
+.rs-school{
+    height: 32px;
+}
+
+figure{
+    display: inline-block;
+    margin: 0;
+    background-color: goldenrod;
+    border: 5px solid gold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+@media (max-width:1024px) {
+    *{
+        font-size: 14px;
+    }
+}
+@media (max-width:768px) {
+    *{
+        font-size: 20px;
+    }
+
+    main{
+        display:block;
+
+    }
+    .colum-left, .colum-right{
+        width: 100%;
+        padding-left:20px;
+        padding-right: 20;
+    }
+    .codewars{
+        width: 300px;
+    }
+
+    .menu-icon{
+        z-index: 5;
+        display: block;
+        position: fixed;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        margin: 20px;
+    }
+    .menu-icon::before,
+    .menu-icon::after,
+    .menu-icon span{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #ffffff;
+    }
+    .menu-icon::before,
+    .menu-icon::after{
+        content: '';
+    }
+    .menu-icon::before{
+        top: 0;
+    }
+    .menu-icon::after{
+        bottom: 0;
+    }
+
+    .menu-icon span{
+        top: 50%;
+        transform: scale(1) translate(0px,-50%);
+    }
+
+    .ul-nav{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        flex-flow: column;
+        overflow: auto;
+    }
+
+    .ul-nav.active{
+        left: 0;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 6;
+    }
+
+    .photo{
+        margin-top: 80px;
+    }
+
+}
+@media (max-width:420px) {
+    *{
+        font-size: 14px;
+    }
+
+    .codewars{
+        width: 250px;
+    }
 }

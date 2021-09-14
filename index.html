@@ -2,44 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <div class="centr">
+    <div class="container">
         <header>
-            <div class="header-left">
-                <h1>Sharovskyi Yevhenii</h1>
-                <p>Front-End Developer</p>
-                <section>
-                    <h2>Contacts:</h2>
-                    <ul>
-                        <li>telegram: YevheniiSh </li>
-                        <li>mail: sharovskiyevgeniy@gmail.com</li>
-                    </ul>
-                </section>
-            </div>
+            <h2 class="menu-text">CV Front-End Developer</h2>
+            <div class="menu-icon"><span>
 
-            <img class="photo" src="image/christopher-alvarenga-3G1C_MvxlKs-unsplash.jpg" alt="picture of resume owner">
-
-
+            </span></div>
+            <nav>              
+                <ul class="ul-nav">
+                    <li><a href="#contacts">contacts</a></li>
+                    <li><a href="#skill">skill</a></li>
+                    <li><a href="#english">english level</a></li>
+                    <li><a href="#summary">summary</a></li>
+                    <li><a href="#sample-code">sample code</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#education">education</a></li>
+                </ul>
+            </nav>
         </header>
+
         <main>
-            <div class="resume-left">
-                <article>
-                    <h2>Summary:</h2>
-                    <p>Scrupulous Front-End developer focused on professional growth. I love to
-                        learn something new and improve my development skills. I develop my skills
-                        every day.</p>
 
-                </article>
 
-                <section>
+
+
+            <div class="colum colum-left">
+                <img class="photo" src="image/christopher-alvarenga-3G1C_MvxlKs-unsplash.jpg"
+                alt="picture of resume owner">
+                <div class="header-text">
+                    <h1>Sharovskyi Yevhenii</h1>
+                    <h2>Front-End Developer</h2>
+    
+                </div>
+                    <section id="contacts">
+                        <h2>Contacts:</h2>
+                        <ul>
+                            <li>telegram: YevheniiSh </li>
+                            <li>mail: sharovskiyevgeniy@gmail.com</li>
+                        </ul>
+                    </section>
+
+                <section id="skill">
                     <h2>Skills:</h2>
                     <ul>
                         <li>HTML</li>
@@ -50,49 +64,66 @@
                         <li>Git</li>
                     </ul>
                 </section>
-                <section>
+                <section id="english">
                     <h2>English level:</h2>
                     <p><b></b> A1 (Beginner)</p>
                 </section>
 
+
             </div>
 
-            <div class="resume-right">
-                <section>
+            <div class="colum colum-right">
+                <section id="summary">
+                    <h2>Summary:</h2>
+                    <p>Scrupulous Front-End developer focused on professional growth. I love to
+                        learn something new and improve my development skills. I develop my skills
+                        every day.</p>
+
+                </section>
+                <section id="sample-code">
                     <h2>Sample code:</h2>
-                    <a href="https://www.codewars.com/users/sharovskiye">Codewars</a>
-                    <pre><code>function usdcny(usd) {
-    let cny = usd * 6.75;
-    return cny.toFixed(2)+" Chinese Yuan";
+                    
+                    <a href="https://www.codewars.com/users/sharovskiye"><img class="codewars" src="https://www.codewars.com/users/sharovskiye/badges/large" alt="Codewars"></a>
+                    <pre><code><span class="blue">function</span> <span class="peru">usdcny</span>(<span class="cyan">usd</span>) {
+   <span class="blue">let</span> <span class="cyan">cny</span> = <span class="cyan">usd</span> * <span class="green">6.75</span>;
+    <span class="magenta">return</span> <span class="cyan">cny</span><span class="peru">.toFixed</span><span class="magenta">(</span>2<span class="magenta">)</span>+<span class="coral">" Chinese Yuan"</span>;
 }</code></pre>
 
                 </section>
 
-                <section>
+                <section id="project">
                     <h2>Project:</h2>
-                    <a href="https://github.com/sharovskiye">GitHub</a>
+                    <a href="https://rolling-scopes-school.github.io/sharovskiye-JSFEPRESCHOOL/museum/"> <figure>
+                        <figcaption>Museum</figcaption>
+                        <img src="image/museum.JPG" alt="museum">
+                    </figure></a>
+                   
                 </section>
 
 
-                <section>
+                <section id="education">
                     <h2>Education:</h2>
-                    <p>Junior Specialist, Technician-Programmer, RS School "JS / FRONT-END"
-                        courses. </p>
+                    <ul class="ul-education">
+                        <li>Junior Specialist, Technician-Programmer</li>
+                        <li>RS School "JS / FRONT-END" courses.</li>
+                    </ul>
                 </section>
 
             </div>
+
+
         </main>
-       
-
-
-
         <footer>
             <a href="https://github.com/sharovskiye">GitHub</a>
             <span>2021</span>
-            <a href="https://rs.school/js/"><img class="rs-school" src="https://rs.school/images/rs_school_js.svg"
+            <a href="https://rs.school/js/"><img class="rs-school" src="image/rs_school_js.svg"
                     alt="rs_school"></a>
         </footer>
     </div>
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
