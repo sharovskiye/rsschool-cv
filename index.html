@@ -15,15 +15,19 @@
 <body>
     <div class="container">
         <header>
-            <h2>CV Front-End Developer</h2>
-            <nav>
+            <h2 class="menu-text">CV Front-End Developer</h2>
+            <div class="menu-icon"><span>
+
+            </span></div>
+            <nav>              
                 <ul class="ul-nav">
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                    <li><a href="">6</a></li>
+                    <li><a href="#contacts">contacts</a></li>
+                    <li><a href="#skill">skill</a></li>
+                    <li><a href="#english">english level</a></li>
+                    <li><a href="#summary">summary</a></li>
+                    <li><a href="#sample-code">sample code</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#education">education</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,7 +45,7 @@
                     <h2>Front-End Developer</h2>
     
                 </div>
-                    <section>
+                    <section id="contacts">
                         <h2>Contacts:</h2>
                         <ul>
                             <li>telegram: YevheniiSh </li>
@@ -49,7 +53,7 @@
                         </ul>
                     </section>
 
-                <section>
+                <section id="skill">
                     <h2>Skills:</h2>
                     <ul>
                         <li>HTML</li>
@@ -60,7 +64,7 @@
                         <li>Git</li>
                     </ul>
                 </section>
-                <section>
+                <section id="english">
                     <h2>English level:</h2>
                     <p><b></b> A1 (Beginner)</p>
                 </section>
@@ -69,25 +73,25 @@
             </div>
 
             <div class="colum colum-right">
-                <article>
+                <section id="summary">
                     <h2>Summary:</h2>
                     <p>Scrupulous Front-End developer focused on professional growth. I love to
                         learn something new and improve my development skills. I develop my skills
                         every day.</p>
 
-                </article>
-                <section>
+                </section>
+                <section id="sample-code">
                     <h2>Sample code:</h2>
                     
                     <a href="https://www.codewars.com/users/sharovskiye"><img class="codewars" src="https://www.codewars.com/users/sharovskiye/badges/large" alt="Codewars"></a>
-                    <pre><code>function usdcny(usd) {
-    let cny = usd * 6.75;
-    return cny.toFixed(2)+" Chinese Yuan";
+                    <pre><code><span class="blue">function</span> <span class="peru">usdcny</span>(<span class="cyan">usd</span>) {
+   <span class="blue">let</span> <span class="cyan">cny</span> = <span class="cyan">usd</span> * <span class="green">6.75</span>;
+    <span class="magenta">return</span> <span class="cyan">cny</span><span class="peru">.toFixed</span><span class="magenta">(</span>2<span class="magenta">)</span>+<span class="coral">" Chinese Yuan"</span>;
 }</code></pre>
 
                 </section>
 
-                <section>
+                <section id="project">
                     <h2>Project:</h2>
                     <a href="https://rolling-scopes-school.github.io/sharovskiye-JSFEPRESCHOOL/museum/"> <figure>
                         <figcaption>Museum</figcaption>
@@ -97,7 +101,7 @@
                 </section>
 
 
-                <section>
+                <section id="education">
                     <h2>Education:</h2>
                     <ul class="ul-education">
                         <li>Junior Specialist, Technician-Programmer</li>
@@ -119,6 +123,7 @@
 
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
