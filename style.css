@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -12,6 +13,8 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
+
+
 
 body{
     margin: 0;
@@ -129,6 +132,8 @@ section{
 
 .rs-school{
     height: 32px;
+    padding: 5px;
+    display: block;
 }
 
 figure{
@@ -201,6 +206,21 @@ ul{
         top: 50%;
         transform: scale(1) translate(0px,-50%);
     }
+
+    .menu-item{
+        padding: 30px 30%;
+        /* padding-left: 50%; */
+        /* word-wrap: none; */
+        /* display: contents; */
+        /* padding: auto; */
+    }
+
+    .ul-nav li{
+        display: contents;
+        padding: 20px 100%;
+    }
+
+
 
     .ul-nav{
         position: fixed;
